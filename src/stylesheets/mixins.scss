@@ -1,0 +1,53 @@
+@mixin flexContainer($display, $justifyContent, $alignItems, $flexFlow) {
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-flow: $flexFlow;
+}
+
+@mixin boxSize($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin boxStyle($radius) {
+  box-shadow: 0 2px 25px 2px $niceBlueShadow;
+  border-radius: $radius;
+}
+
+@mixin linkBoxStyle {
+  border: 2px solid $blackPure;
+  border-radius: 5px;
+  color: $blackPure;
+  text-transform: uppercase;
+  font-size: $fontSizeXS;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    @include boxStyle(5px);
+    color: $whitePure;
+    background-color: $blackPure;
+    border-color: $whitePure;
+  }
+}
+
+@mixin subsectionStyle {
+  border-bottom: 4px solid $blackPure;
+  color: $blackPure;
+  font-size: $fontSizeS;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  &:hover {
+    border-width: 0 0 6px 0;
+  }
+}
+
+@mixin backgroundImage($url, $positionX, $positionY, $repeat, $color, $size) {
+  background: url($url) $positionX $positionY $repeat $color;
+  background-size: $size;
+}
