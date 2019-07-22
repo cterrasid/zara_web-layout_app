@@ -1,33 +1,34 @@
-.App {
-  text-align: center;
-}
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer {
+  &__container {
+    @include flexContainer(flex, space-between, center, column);
+    background-color: $white-pure;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.country-info {
+  &__container {
+    @include flexContainer(flex, space-between, center, row);
+    width: 100%;
+    border-top: 1px solid #ddd9d9;
+  }
+
+  &__list {
+    padding: 20px;
+  }
+
+  &__item {
+    font-size: $font-size-SM;
+    margin-bottom: 5px;
+    padding-right: 400px;
+  }
+
+  &__copy {
+    color: #7c7878;
+    text-transform: capitalize;
+    font-size: $font-size-S;
+    padding: 20px;
   }
 }

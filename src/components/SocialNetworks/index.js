@@ -9,7 +9,7 @@ const SocialNetworks = () => {
     <section className="network__container">
       <ul className="network__list">
         {networks.map(network => (
-          <li key={network.name}>
+          <li className="network__list-element" key={network.name}>
             <a href={network.url} target="_blank" rel="noopener noreferrer">
               {network.name}
             </a>

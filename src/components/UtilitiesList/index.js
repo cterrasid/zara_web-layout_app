@@ -5,9 +5,9 @@ const UtilitiesList = props => {
   const { items } = props;
 
   return (
-    <ul className="utilities__section">
+    <ul className="utilities__list">
       {items.map(item => (
-        <li key={item.name}>
+        <li className="utilities__list-element" key={item.name}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
             {item.name}
           </a>

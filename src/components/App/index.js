@@ -17,7 +17,7 @@ class App extends PureComponent {
   }
 
   handleMenuVisibility() {
-    const { menuStatus, logo } = this.state;
+    const { menuStatus } = this.state;
 
     menuStatus === 'open'
       ? this.setState({ menuStatus: 'close', logo: 'right' })

@@ -8,6 +8,7 @@ const Newsletter = () => {
       <label htmlFor="newsletter">
         <input
           type="email"
+          className="newsletter__input"
           name="newsletter"
           id="newsletter"
           placeholder="Enter your email address here"

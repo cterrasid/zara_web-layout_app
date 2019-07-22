@@ -4,8 +4,9 @@
 .header {
   &__container {
     @include flexContainer(flex, space-between, center, row);
-    height: 150px;
+    @include boxSize(150px, 100%);
     background-color: $white-pure;
+    position: fixed;
   }
 
   &__logo {

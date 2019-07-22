@@ -7,14 +7,14 @@ const Utilities = () => {
   const { utilities } = data;
 
   return (
-    <article className="utilities__container">
+    <ul className="utilities__container">
       {utilities.map(utility => (
-        <div>
-          <h2 className="utilities__section-title">{utility.title}</h2>
+        <li className="utilities__container-list">
+          <h2 className="utilities__title">{utility.title}</h2>
           <UtilitiesList items={utility.items} />
-        </div>
+        </li>
       ))}
-    </article>
+    </ul>
   );
 };
 
