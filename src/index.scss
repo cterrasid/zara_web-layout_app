@@ -1,1 +1,24 @@
+@import '../src/stylesheets/variables.scss';
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: $font-primary;
+  text-transform: uppercase;
+  color: $black-pure;
+  font-size: $font-size-M;
+}
+
+body {
+  height: 100vh;
+  background-color: pink;
+}
+
+a {
+  color: $black-pure;
+}

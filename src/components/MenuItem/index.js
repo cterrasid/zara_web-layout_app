@@ -1,11 +1,19 @@
 import React from 'react';
 import './styles.scss';
 
-const MenuItem = () => {
+const MenuItem = props => {
+  const { items } = props;
+
   return (
-    <a href="link">
-      <span className="menu__subcategory-title">Women</span>
-    </a>
+    <ul>
+      {items.map(item => (
+        <li key={item.name}>
+          <a href={item.url} target="_blank" rel="noopener noreferrer">
+            <h4 className="item__title">{item.name}</h4>
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 };
 

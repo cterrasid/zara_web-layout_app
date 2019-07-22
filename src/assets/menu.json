@@ -1,0 +1,99 @@
+{
+  "menu": {
+    "category": {
+      "items": [
+        {
+          "name": "Sale",
+          "url": "add link"
+        },
+        {
+          "name": "New collection",
+          "url": "add link"
+        },
+        {
+          "name": "Join life stories",
+          "url": "add link"
+        }
+      ]
+    },
+    "subcategory": [
+      {
+        "title": {
+          "name": "Women",
+          "url": "add link"
+        },
+        "items": [
+          {
+            "name": "Denim on",
+            "url": "add link"
+          },
+          {
+            "name": "Personal best",
+            "url": "add link"
+          },
+          {
+            "name": "High voltage",
+            "url": "add link"
+          },
+          {
+            "name": "A summer night",
+            "url": "add link"
+          },
+          {
+            "name": "The tourist",
+            "url": "add link"
+          },
+          {
+            "name": "The woman suit",
+            "url": "add link"
+          },
+          {
+            "name": "Minimal collection",
+            "url": "add link"
+          },
+          {
+            "name": "Campaign collection",
+            "url": "add link"
+          }
+        ]
+      },
+      {
+        "title": {
+          "name": "Edit 02",
+          "url": "add link"
+        },
+        "items": [
+          {
+            "name": "Sand peaks",
+            "url": "add link"
+          },
+          {
+            "name": "The summer dress",
+            "url": "add link"
+          },
+          {
+            "name": "Ice cream",
+            "url": "add link"
+          },
+          {
+            "name": "Clean lines",
+            "url": "add link"
+          }
+        ]
+      },
+      {
+        "title": {
+          "name": "Edit 01",
+          "url": "add link"
+        },
+        "items": [
+          {
+            "name": "Campaign",
+            "url": "add link"
+          }
+        ]
+      }
+    ]
+  },
+  "more_info": { "name": "+ Info", "url": "#" }
+}

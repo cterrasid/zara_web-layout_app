@@ -1,0 +1,24 @@
+{
+  "networks": [
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/zara/"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/Zara"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/ZARA"
+    },
+    {
+      "name": "Pinterest",
+      "url": "https://es.pinterest.com/zaraofficial"
+    },
+    {
+      "name": "Youtube",
+      "url": "http://www.youtube.com/user/zara"
+    }
+  ]
+}

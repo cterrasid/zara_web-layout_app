@@ -1,15 +1,15 @@
 import React from 'react';
 import './styles.scss';
 
-const MenuCategories = props => {
+const UtilitiesList = props => {
   const { items } = props;
 
   return (
-    <ul className="menu__category">
+    <ul className="utilities__section">
       {items.map(item => (
         <li key={item.name}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
-            <span className="menu__subcategory-title">{item.name}</span>
+            {item.name}
           </a>
         </li>
       ))}
@@ -17,4 +17,4 @@ const MenuCategories = props => {
   );
 };
 
-export default MenuCategories;
+export default UtilitiesList;

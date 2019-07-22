@@ -9,16 +9,31 @@ class App extends PureComponent {
     super(props);
 
     this.state = {
-      menu: [],
+      menuStatus: 'close' || 'open',
+      logo: 'right',
     };
+
+    this.handleMenuVisibility = this.handleMenuVisibility.bind(this);
+  }
+
+  handleMenuVisibility() {
+    const { menuStatus, logo } = this.state;
+
+    menuStatus === 'open'
+      ? this.setState({ menuStatus: 'close', logo: 'right' })
+      : this.setState({ menuStatus: 'open', logo: 'left' });
   }
 
   render() {
-    const { menu } = this.state;
+    const { menuStatus, logo } = this.state;
     return (
       <div className="app__container">
-        <Header />
-        <Main menu={menu} />
+        <Header
+          menuStatus={menuStatus}
+          logo={logo}
+          handleMenuVisibility={this.handleMenuVisibility}
+        />
+        <Main />
         <Footer />
       </div>
     );

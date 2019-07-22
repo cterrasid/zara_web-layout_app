@@ -1,0 +1,124 @@
+{
+  "utilities": [
+    {
+      "title": "Help",
+      "items": [
+        {
+          "name": "Shop at zara.com",
+          "url": "https://www.zara.com/uk/en/help/shop-at-zaracom-h2.html"
+        },
+        {
+          "name": "Product",
+          "url": "https://www.zara.com/uk/en/help/product-h9.html"
+        },
+        {
+          "name": "Gift card",
+          "url": "https://www.zara.com/uk/en/help/gift-card-h18.html"
+        },
+        {
+          "name": "Gift receipt",
+          "url": "https://www.zara.com/uk/en/help/gift-receipt-h22.html"
+        },
+        {
+          "name": "Payment",
+          "url": "https://www.zara.com/uk/en/help/payment-h25.html"
+        },
+        {
+          "name": "Shipping",
+          "url": "https://www.zara.com/uk/en/help/shipping-h31.html"
+        },
+        {
+          "name": "Exchanges and returns",
+          "url": "https://www.zara.com/uk/en/help/exchanges-and-returns-h36.html"
+        },
+        {
+          "name": "Shops and company",
+          "url": "https://www.zara.com/uk/en/help/shops-and-company-h41.html"
+        },
+        {
+          "name": "My account",
+          "url": "https://www.zara.com/uk/en/user/menu"
+        }
+      ]
+    },
+    {
+      "title": "Follow us",
+      "items": [
+        {
+          "name": "Newsletter",
+          "url": "https://www.zara.com/uk/en/z-newsletter-l1400.html?v1=11110"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/zara/"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/Zara"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/ZARA"
+        },
+        {
+          "name": "Pinterest",
+          "url": "https://es.pinterest.com/zaraofficial"
+        },
+        {
+          "name": "Youtube",
+          "url": "http://www.youtube.com/user/zara"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "items": [
+        {
+          "name": "About us",
+          "url": "http://m.zara.com/"
+        },
+        {
+          "name": "Offices",
+          "url": "https://www.zara.com/uk/en/z-company-l1391.html?v1=11112"
+        },
+        {
+          "name": "Stores",
+          "url": "https://www.zara.com/uk/en/z-stores-l1404.html?v1=11108"
+        },
+        {
+          "name": "Work with us",
+          "url": "https://www.zara.com/uk/en/z-job-l1398.html?v1=18003"
+        },
+        {
+          "name": "Gender pay gap report",
+          "url": "https://static.zara.net/static/pdfs/UK/gender-pay-gap-report/gender-pay-gap-report-20190409.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Policies",
+      "items": [
+        {
+          "name": "Privacy policy",
+          "url": "https://static.zara.net/static/pdfs/UK/privacy-policy/privacy-policy-en_UK-20180525.pdf"
+        },
+        {
+          "name": "Purchase conditions",
+          "url": "https://static.zara.net/static//pdfs/UK/terms-and-conditions/terms-and-conditions-en_UK-20190617.pdf"
+        },
+        {
+          "name": "Gift card conditions",
+          "url": "https://static.zara.net/static/pdfs/UK/giftcard-conditions/giftcard-conditions-en_UK-20180312.pdf"
+        },
+        {
+          "name": "UK act on modern slavery",
+          "url": "https://www.inditex.com/documents/10279/364755/Inditex+Modern+Slavery+Statement/82b2f138-5bfe-9134-bcf4-8a7fbf16e470"
+        },
+        {
+          "name": "UK tax strategy and approach",
+          "url": "https://static.zara.net/static/pdfs/UK/uk-tax-strategy/uk-tax-strategy-20190130.pdf"
+        }
+      ]
+    }
+  ]
+}
