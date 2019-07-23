@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.a85d114a.chunk.css",
-    "main.js": "./static/js/main.71d7b0a6.chunk.js",
-    "main.js.map": "./static/js/main.71d7b0a6.chunk.js.map",
+    "main.css": "./static/css/main.dcb0d52a.chunk.css",
+    "main.js": "./static/js/main.723bb1c9.chunk.js",
+    "main.js.map": "./static/js/main.723bb1c9.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
     "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
-    "static/js/2.41edc8e3.chunk.js": "./static/js/2.41edc8e3.chunk.js",
-    "static/js/2.41edc8e3.chunk.js.map": "./static/js/2.41edc8e3.chunk.js.map",
+    "static/js/2.6af30b1e.chunk.js": "./static/js/2.6af30b1e.chunk.js",
+    "static/js/2.6af30b1e.chunk.js.map": "./static/js/2.6af30b1e.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.473c7a40b0c615b8136b94c35608ac56.js": "./precache-manifest.473c7a40b0c615b8136b94c35608ac56.js",
+    "precache-manifest.591697cf6caaf1bb711cc89fd918d4e6.js": "./precache-manifest.591697cf6caaf1bb711cc89fd918d4e6.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.a85d114a.chunk.css.map": "./static/css/main.a85d114a.chunk.css.map",
+    "static/css/main.dcb0d52a.chunk.css.map": "./static/css/main.dcb0d52a.chunk.css.map",
+    "static/media/chasingimg1.st.jpg": "./static/media/chasingimg1.st.6c26471b.jpg",
     "static/media/logo-zara-coll19.png": "./static/media/logo-zara-coll19.1385cd02.png",
     "static/media/look1-look1.st.jpg": "./static/media/look1-look1.st.02959752.jpg",
+    "static/media/look2-look2.st.jpg": "./static/media/look2-look2.st.ebc3d06d.jpg",
     "static/media/textchasing.svg": "./static/media/textchasing.81182ac2.svg",
     "static/media/textspring.svg": "./static/media/textspring.8971c598.svg"
   }
