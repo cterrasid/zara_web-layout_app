@@ -1,0 +1,21 @@
+{
+  "images": {
+    "logo": {
+      "url": "",
+      "alt": "Chasing the Light"
+    },
+    "sublogo": {
+      "url": "",
+      "alt": "Woman spring summer 19"
+    },
+    "looks": {
+      "look_one": "Look 01",
+      "look_two": "Look 02",
+      "look_three": "Look 03"
+    },
+    "data": {
+      "serie": "Chasing the Light",
+      "name": "WOMAN Spring Summer 19"
+    }
+  }
+}

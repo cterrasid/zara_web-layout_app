@@ -5,6 +5,7 @@
   &__container {
     @include flexContainer(flex, space-between, center, column);
     background-color: $white-pure;
+    width: 100%;
   }
 }
 

@@ -6,8 +6,6 @@
     @include boxSize(30px, 70px);
     @include flexContainer(flex, center, center, unset);
     transition: display ease 0.5s 0s;
-    position: relative;
-    z-index: 1;
 
     &:hover,
     &:active {

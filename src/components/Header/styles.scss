@@ -7,6 +7,7 @@
     @include boxSize(150px, 100%);
     background-color: $white-pure;
     position: fixed;
+    z-index: 3;
   }
 
   &__logo {
@@ -19,10 +20,6 @@
 
 .left {
   padding-left: 0;
-}
-
-.right {
-  padding-left: inherith;
 }
 
 .search {

@@ -11,21 +11,37 @@ class App extends PureComponent {
     this.state = {
       menuStatus: 'close' || 'open',
       logo: 'right',
+      visibilityClass: 'hidden',
     };
 
     this.handleMenuVisibility = this.handleMenuVisibility.bind(this);
+    this.imagesAppearing = this.imagesAppearing.bind(this);
+  }
+
+  componentDidMount() {
+    window.onscroll = () => this.imagesAppearing();
   }
 
   handleMenuVisibility() {
     const { menuStatus } = this.state;
 
-    menuStatus === 'open'
-      ? this.setState({ menuStatus: 'close', logo: 'right' })
-      : this.setState({ menuStatus: 'open', logo: 'left' });
+    if (menuStatus === 'open') {
+      this.setState({ menuStatus: 'close', logo: 'right' });
+    } else {
+      this.setState({ menuStatus: 'open', logo: 'left' });
+    }
+  }
+
+  imagesAppearing() {
+    if (document.documentElement.scrollTop > 50) {
+      this.setState({ visibilityClass: 'visible' });
+    } else if (document.documentElement.scrollTop < 50) {
+      this.setState({ visibilityClass: 'disappear' });
+    }
   }
 
   render() {
-    const { menuStatus, logo } = this.state;
+    const { menuStatus, logo, visibilityClass } = this.state;
     return (
       <div className="app__container">
         <Header
@@ -33,7 +49,7 @@ class App extends PureComponent {
           logo={logo}
           handleMenuVisibility={this.handleMenuVisibility}
         />
-        <Main />
+        <Main visibilityClass={visibilityClass} />
         <Footer />
       </div>
     );

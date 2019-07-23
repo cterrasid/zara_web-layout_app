@@ -3,7 +3,80 @@
 
 .main {
   &__container {
+    @include flexContainer(flex, center, center, row);
     height: 100vh;
     padding-top: 150px;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+.look-one {
+  &__wrapper {
+    margin-top: 10%;
+    position: absolute;
+    left: 55%;
+    z-index: 1;
+  }
+  &__image {
+    @include boxSize(580px, 507px);
+  }
+}
+.logo {
+  &-wrapper,
+  .visible {
+    @include flexContainer(flex, flex-end, center, column);
+    width: 380px;
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    z-index: 1;
+    transform: translateX(0);
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+    @keyframes appear {
+      0% {
+        transform: translateX(-390px);
+      }
+      100% {
+        transform: translateX(30px);
+      }
+    }
+  }
+
+  &__chasing {
+    display: block;
+    @include boxSize(120px, 380px);
+    align-self: flex-end;
+  }
+
+  &__spring {
+    display: block;
+    @include boxSize(20px, 185px);
+    margin-top: 30px;
+    align-self: flex-end;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.disappear {
+  animation-name: disappear;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  @keyframes disappear {
+    0% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(-390px);
+    }
   }
 }

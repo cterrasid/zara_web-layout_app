@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a85d114a.chunk.css",
+    "main.js": "/static/js/main.71d7b0a6.chunk.js",
+    "main.js.map": "/static/js/main.71d7b0a6.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.41edc8e3.chunk.js": "/static/js/2.41edc8e3.chunk.js",
+    "static/js/2.41edc8e3.chunk.js.map": "/static/js/2.41edc8e3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.57d7be9848c64920c3f5e28467476ed1.js": "/precache-manifest.57d7be9848c64920c3f5e28467476ed1.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.a85d114a.chunk.css.map": "/static/css/main.a85d114a.chunk.css.map",
+    "static/media/logo-zara-coll19.png": "/static/media/logo-zara-coll19.1385cd02.png",
+    "static/media/look1-look1.st.jpg": "/static/media/look1-look1.st.02959752.jpg",
+    "static/media/textchasing.svg": "/static/media/textchasing.81182ac2.svg",
+    "static/media/textspring.svg": "/static/media/textspring.8971c598.svg"
+  }
+}
