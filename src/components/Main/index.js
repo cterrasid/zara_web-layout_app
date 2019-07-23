@@ -6,10 +6,11 @@ import Spring from '../../images/textspring.svg';
 import Look01 from '../../images/look1-look1.st.jpg';
 import Look02 from '../../images/look2-look2.st.jpg';
 import imageLook02 from '../../images/chasingimg1.st.jpg';
+import videoLook02 from '../../videos/ss19-chasing-the-light-woman-video-1_1.mp4';
 import './styles.scss';
 
 const Main = props => {
-  const { visibilityClass } = props;
+  const { visibilityClass, hideLeft } = props;
   const { images } = image;
   const { logo, sublogo, looks, data } = images;
 
@@ -33,7 +34,7 @@ const Main = props => {
           </p>
         </div>
       </section>
-      <section className="look-two__container">
+      <section className={`look-two__container ${hideLeft}`}>
         <div className="look-two__wrapper">
           <img
             className="look-two__image-one"
@@ -46,11 +47,21 @@ const Main = props => {
             {`${data.name}.`}
           </p>
         </div>
-        <img
-          className="look-two__image-two"
-          src={imageLook02}
-          alt={looks.look_two}
-        ></img>
+        <div className="look-two__video-wrapper">
+          <video className="look-two__video" loop autoPlay>
+            <source src={videoLook02} type="video/mp4" />
+            <track
+              default
+              kind="captions"
+              src="../../videos/ss19-chasing-the-light-woman-video-1_1.vtt"
+            />
+          </video>
+          <img
+            className="look-two__image-two"
+            src={imageLook02}
+            alt={looks.look_two}
+          ></img>
+        </div>
       </section>
     </main>
   );
@@ -58,6 +69,7 @@ const Main = props => {
 
 Main.propTypes = {
   visibilityClass: PropTypes.string.isRequired,
+  hideLeft: PropTypes.string.isRequired,
 };
 
 export default Main;

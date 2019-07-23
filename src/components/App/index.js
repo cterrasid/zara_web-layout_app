@@ -12,10 +12,12 @@ class App extends PureComponent {
       menuStatus: 'close' || 'open',
       logo: 'right',
       visibilityClass: 'hidden',
+      hideLeft: 'hide-left',
     };
 
     this.handleMenuVisibility = this.handleMenuVisibility.bind(this);
     this.imagesAppearing = this.imagesAppearing.bind(this);
+    this.handleHideLeft = this.handleHideLeft.bind(this);
   }
 
   componentDidMount() {
@@ -40,8 +42,14 @@ class App extends PureComponent {
     }
   }
 
+  handleHideLeft() {
+    if (document.documentElement.scrollTop > 100) {
+      this.setState({ hideLeft: 'hide-left' });
+    }
+  }
+
   render() {
-    const { menuStatus, logo, visibilityClass } = this.state;
+    const { menuStatus, logo, visibilityClass, hideLeft } = this.state;
     return (
       <div className="app__container">
         <Header
@@ -49,7 +57,7 @@ class App extends PureComponent {
           logo={logo}
           handleMenuVisibility={this.handleMenuVisibility}
         />
-        <Main visibilityClass={visibilityClass} />
+        <Main visibilityClass={visibilityClass} hideLeft={hideLeft} />
         <Footer />
       </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 const MenuItem = props => {
@@ -15,6 +16,10 @@ const MenuItem = props => {
       ))}
     </ul>
   );
+};
+
+MenuItem.propTypes = {
+  items: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default MenuItem;

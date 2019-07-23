@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import MenuItem from '../MenuItem';
 import './styles.scss';
 
@@ -17,6 +18,10 @@ const MenuSubcategories = props => {
       ))}
     </ul>
   );
+};
+
+MenuSubcategories.propTypes = {
+  subcategory: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default MenuSubcategories;

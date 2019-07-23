@@ -43,6 +43,7 @@
     width: 100%;
     padding: 70px 95px;
     z-index: 2;
+    transform: translateX(0);
   }
 
   &__wrapper {
@@ -53,6 +54,14 @@
     &-one {
       width: 450px;
     }
+
+    &-two {
+      width: 190px;
+    }
+  }
+
+  &__video {
+    @include boxSize(290px, 395px);
   }
 }
 
@@ -114,3 +123,19 @@
     }
   }
 }
+
+// .hide-left {
+//   animation-name: hide-left;
+//   animation-duration: 1s;
+//   animation-timing-function: linear;
+//   animation-fill-mode: forwards;
+
+//   @keyframes hide-left {
+//     0% {
+//       transform: translateX(0px);
+//     }
+//     100% {
+//       transform: translateX(-100px);
+//     }
+//   }
+// }
