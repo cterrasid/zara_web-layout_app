@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c76a923e2b90cf6ad267fa584a522317",
+    "revision": "c56cddb5e93b353a6790d7b8505bb76c",
     "url": "./index.html"
   },
   {
-    "revision": "29b95bb394f6950bae4d",
-    "url": "./static/css/main.dcb0d52a.chunk.css"
+    "revision": "f06da251a41d53731762",
+    "url": "./static/css/main.b93aedb6.chunk.css"
   },
   {
-    "revision": "e1f42159f602730aa919",
-    "url": "./static/js/2.6af30b1e.chunk.js"
+    "revision": "015be0247dc3ee2955cc",
+    "url": "./static/js/2.76d8ed81.chunk.js"
   },
   {
-    "revision": "29b95bb394f6950bae4d",
-    "url": "./static/js/main.723bb1c9.chunk.js"
+    "revision": "f06da251a41d53731762",
+    "url": "./static/js/main.84e2fc96.chunk.js"
   },
   {
     "revision": "8c97409f0ee389fe75da",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ebc3d06d46923411f468489189223d14",
     "url": "./static/media/look2-look2.st.ebc3d06d.jpg"
+  },
+  {
+    "revision": "53cefcb9f9af65191f3c88d31adea5df",
+    "url": "./static/media/ss19-chasing-the-light-woman-video-1_1.53cefcb9.mp4"
   },
   {
     "revision": "81182ac2bc630034037d1fdeea544c95",
