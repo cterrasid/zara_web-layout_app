@@ -1,7 +1,7 @@
 {
   "name": "adalab-boiler-plate",
   "version": "0.1.0",
-  "homeage": "./",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "node-sass": "^4.12.0",
