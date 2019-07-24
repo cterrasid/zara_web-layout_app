@@ -1,18 +1,69 @@
 {
   "images": {
     "logo": {
-      "url": "",
+      "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563905479/zara/textchasing_taaxmq.svg",
       "alt": "Chasing the Light"
     },
     "sublogo": {
-      "url": "",
+      "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563905478/zara/textspring_xgmlqj.svg",
       "alt": "Woman spring summer 19"
     },
     "looks": {
-      "look_one": "Look 01",
-      "look_two": "Look 02",
-      "look_three": "Look 03"
+      "look_one": {
+        "name": "Look 01",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563905495/zara/look1-look1.st_garh5i.jpg"
+      },
+      "look_two": {
+        "name": "Look 02",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563905541/zara/look2-look2.st_hiswzm.jpg",
+        "video": "https://res.cloudinary.com/cterrasid/video/upload/v1563905616/zara/ss19-chasing-the-light-woman-video-1_1_cnwf8z.mp4",
+        "asset": "https://res.cloudinary.com/cterrasid/image/upload/v1563905478/zara/chasingimg1.st_vvcioc.jpg"
+      },
+      "look_three": {
+        "name": "Look 03",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906020/zara/look3-look3.st_qlwh6d.jpg",
+        "asset": "https://res.cloudinary.com/cterrasid/image/upload/v1563906027/zara/look3-look3.s_tf2ski.jpg"
+      },
+      "look_four": {
+        "name": "Look 04",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906022/zara/look4-look4.st_vnnhum.jpg"
+      },
+      "look_five": {
+        "name": "Look 05",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906022/zara/look6-look6.st_oyoqwf.jpg",
+        "asset_one": "https://res.cloudinary.com/cterrasid/image/upload/v1563905970/zara/chasingimg.st_sjok4t.jpg",
+        "asset_two": "https://res.cloudinary.com/cterrasid/image/upload/v1563906019/zara/look7-look7.st_gg3mou.jpg"
+      },
+      "look_six": {
+        "name": "Look 06",
+        "url": "https://res.cloudinary.com/cterrasid/video/upload/v1563905938/zara/video-2-v3_1_ev8yqt.mp4",
+        "asset": "https://res.cloudinary.com/cterrasid/image/upload/v1563905983/zara/img3.st_ngjw8h.jpg"
+      },
+      "look_seven": {
+        "name": "Look 07",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906023/zara/look10-look10.st_s1u8yr.jpg",
+        "asset": "https://res.cloudinary.com/cterrasid/image/upload/v1563906023/zara/look9-look9.st_zs6uqo.jpg"
+      },
+      "look_eight": {
+        "name": "Look 08",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906026/zara/look11-look11.st_p4ysco.jpg",
+        "video": "https://res.cloudinary.com/cterrasid/video/upload/v1563905928/zara/ss19-chasing-the-light-woman-video-3-v2_1_dmehvm.mp4"
+      },
+      "look_nine": {
+        "name": "Look 09",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906027/zara/look12-look12.st_rq01up.jpg"
+      },
+      "look_ten": {
+        "name": "Look 10",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906107/zara/look13-look13.st_nxmu4n.jpg"
+      },
+      "look_eleven": {
+        "name": "Look 11",
+        "url": "https://res.cloudinary.com/cterrasid/image/upload/v1563906107/zara/look14-look14.st_myobk8.jpg",
+        "asset": "https://res.cloudinary.com/cterrasid/image/upload/v1563906106/zara/img4.st_kthpmy.jpg"
+      }
     },
+    "video": "https://res.cloudinary.com/cterrasid/video/upload/v1563906232/zara/ss19-chasing-the-light-woman-video-4-v2-nosound_1_mhy2ij.mp4",
     "data": {
       "serie": "Chasing the Light",
       "name": "WOMAN Spring Summer 19"

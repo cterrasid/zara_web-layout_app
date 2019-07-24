@@ -12,12 +12,11 @@ class App extends PureComponent {
       menuStatus: 'close' || 'open',
       logo: 'right',
       visibilityClass: 'hidden',
-      hideLeft: 'hide-left',
+      hideLeft: '',
     };
 
     this.handleMenuVisibility = this.handleMenuVisibility.bind(this);
     this.imagesAppearing = this.imagesAppearing.bind(this);
-    this.handleHideLeft = this.handleHideLeft.bind(this);
   }
 
   componentDidMount() {
@@ -35,17 +34,12 @@ class App extends PureComponent {
   }
 
   imagesAppearing() {
-    if (document.documentElement.scrollTop > 50) {
-      this.setState({ visibilityClass: 'visible' });
+    if (document.documentElement.scrollTop > 100) {
+      this.setState({ visibilityClass: 'visible', hideLeft: 'hide-left' });
     } else if (document.documentElement.scrollTop < 50) {
       this.setState({ visibilityClass: 'disappear' });
     }
-  }
-
-  handleHideLeft() {
-    if (document.documentElement.scrollTop > 100) {
-      this.setState({ hideLeft: 'hide-left' });
-    }
+    console.log(document.scrollTop > 80);
   }
 
   render() {

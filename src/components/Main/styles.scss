@@ -7,61 +7,72 @@
     height: 100%;
     padding-top: 150px;
   }
+}
 
-  &__wrapper {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding-right: 85px;
+.section {
+  &-one {
+    &__container {
+      width: 100%;
+      padding-right: 85px;
+    }
+  }
+
+  &-two {
+    &__container {
+      @include flexContainer(flex, space-between, flex-start, row);
+      background-color: $white-pure;
+      width: 100%;
+      padding: 70px 95px;
+      z-index: 2;
+      transform: translateX(0);
+    }
   }
 }
 
-.look-one {
-  &__wrapper {
-    margin: 10% 5% 0 0;
-    width: 100%;
-    @include flexContainer(flex, center, flex-end, column);
-  }
-
-  &__image {
-    @include boxSize(580px, 507px);
-    position: sticky;
-  }
-
+.look {
   &__description,
   &__description strong {
     font-size: $font-size-XS;
     text-transform: capitalize;
     text-align: end;
   }
-}
 
-.look-two {
-  &__container {
-    @include flexContainer(flex, space-between, flex-start, row);
-    background-color: $white-pure;
-    width: 100%;
-    padding: 70px 95px;
-    z-index: 2;
-    transform: translateX(0);
-  }
-
-  &__wrapper {
-    @include flexContainer(flex, center, flex-end, column);
-    z-index: 2;
-  }
-  &__image {
-    &-one {
-      width: 450px;
+  &-one {
+    &__wrapper {
+      margin: 10% 5% 0 0;
+      width: 100%;
+      @include flexContainer(flex, center, flex-end, column);
     }
 
-    &-two {
-      width: 190px;
+    &__image {
+      @include boxSize(580px, 507px);
     }
   }
 
-  &__video {
-    @include boxSize(290px, 395px);
+  &-two {
+    &__wrapper {
+      @include flexContainer(flex, center, flex-end, column);
+      z-index: 2;
+
+      &__image {
+        &-one {
+          width: 450px;
+        }
+
+        &-two {
+          width: 190px;
+          margin: 40px 0;
+        }
+      }
+    }
+
+    &__video {
+      @include boxSize(290px, 395px);
+
+      &-wrapper {
+        @include flexContainer(flex, center, flex-start, column);
+      }
+    }
   }
 }
 
@@ -70,24 +81,6 @@
   .visible {
     @include flexContainer(flex, flex-end, center, column);
     width: 380px;
-    position: absolute;
-    top: 50%;
-    left: -1px;
-    z-index: 1;
-    transform: translateX(0);
-    animation-name: appear;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-
-    @keyframes appear {
-      0% {
-        transform: translateX(-390px);
-      }
-      100% {
-        transform: translateX(30px);
-      }
-    }
   }
 
   &__chasing {
@@ -124,18 +117,48 @@
   }
 }
 
-// .hide-left {
-//   animation-name: hide-left;
-//   animation-duration: 1s;
-//   animation-timing-function: linear;
-//   animation-fill-mode: forwards;
+.hide-left {
+  animation-name: hide-left;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 
-//   @keyframes hide-left {
-//     0% {
-//       transform: translateX(0px);
-//     }
-//     100% {
-//       transform: translateX(-100px);
-//     }
-//   }
-// }
+  @keyframes hide-left {
+    0% {
+      transform: translateX(100%);
+    }
+    50% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+#sticky {
+  position: sticky;
+  top: 100px;
+}
+
+.appear {
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  z-index: 1;
+  transform: translateX(0);
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  @keyframes appear {
+    0% {
+      transform: translateX(-390px);
+    }
+    100% {
+      transform: translateX(30px);
+    }
+  }
+}
