@@ -39,7 +39,6 @@ class App extends PureComponent {
     } else if (document.documentElement.scrollTop < 50) {
       this.setState({ visibilityClass: 'disappear' });
     }
-    console.log(document.scrollTop > 80);
   }
 
   render() {
