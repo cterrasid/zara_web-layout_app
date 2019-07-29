@@ -34,7 +34,7 @@ const Main = props => {
         </div>
       </section>
       <Controller>
-        <Scene triggerHook="onLeave" duration={1000} pin>
+      <Scene triggerHook="onLeave" duration={1000} pin>
           <section className={`section-two__container ${hideLeft}`}>
             <div className="look-two__wrapper">
               <img
@@ -76,7 +76,7 @@ const Main = props => {
           </p>
         </div>
         <img
-          className="look-three__image-one"
+          className="look-three__image-two"
           src={looks.look_three.asset}
           alt={looks.look_three.name}
         ></img>
@@ -88,7 +88,7 @@ const Main = props => {
             src={looks.look_four.url}
             alt={looks.look_four.name}
           ></img>
-          <p className="look__description">
+          <p className="look__description" id="vertical">
             {`${looks.look_four.name}. `}
             <strong>{`${data.serie}. `}</strong>
             {`${data.name}.`}
@@ -109,12 +109,12 @@ const Main = props => {
           </p>
         </div>
         <img
-          className="look-five__image-one"
+          className="look-five__image-two"
           src={looks.look_five.asset_one}
           alt={looks.look_five.name}
         ></img>
         <img
-          className="look-five__image-one"
+          className="look-five__image-three"
           src={looks.look_five.asset_two}
           alt={looks.look_five.name}
         ></img>
@@ -122,7 +122,7 @@ const Main = props => {
       <section className="section-six__container">
         <div className="look-six__wrapper">
           <video className="look-six__video" loop autoPlay>
-            <source src={looks.look_six.video} type="video/mp4" />
+            <source src={looks.look_six.url} type="video/mp4" />
             <track default kind="captions" />
           </video>
           <p className="look__description">
@@ -163,21 +163,21 @@ const Main = props => {
             src={looks.look_eight.url}
             alt={looks.look_eight.name}
           ></img>
-          <p className="look__description">
+          <p className="look__description" id="vertical">
             {`${looks.look_eight.name}. `}
             <strong>{`${data.serie}. `}</strong>
             {`${data.name}.`}
           </p>
         </div>
       </section>
-      <section className={`section-nine__container ${hideLeft}`}>
+      <section className="section-nine__container">
         <div className="look-nine__wrapper">
           <img
             className="look-nine__image-one"
             src={looks.look_nine.url}
             alt={looks.look_nine.name}
           ></img>
-          <p className="look__description">
+          <p className="look__description" id="vertical">
             {`${looks.look_nine.name}. `}
             <strong>{`${data.serie}. `}</strong>
             {`${data.name}.`}
@@ -197,7 +197,7 @@ const Main = props => {
             src={looks.look_ten.url}
             alt={looks.look_ten.name}
           ></img>
-          <p className="look__description">
+          <p className="look__description" id="vertical">
             {`${looks.look_ten.name}. `}
             <strong>{`${data.serie}. `}</strong>
             {`${data.name}.`}
@@ -222,7 +222,7 @@ const Main = props => {
           src={looks.look_eleven.asset}
           alt={looks.look_eleven.name}
         ></img>
-        <div className="logo-wrapper">
+        <div className="logo-wrapper" id="vertical-logo">
           <img className="logo__chasing" src={logo.url} alt={logo.alt} />
           <img
             className="logo__spring"
