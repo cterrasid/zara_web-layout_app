@@ -34,7 +34,7 @@ const Main = props => {
         </div>
       </section>
       <Controller>
-      <Scene triggerHook="onLeave" duration={1000} pin>
+        <Scene triggerHook="onLeave" duration={1000} pin>
           <section className={`section-two__container ${hideLeft}`}>
             <div className="look-two__wrapper">
               <img
