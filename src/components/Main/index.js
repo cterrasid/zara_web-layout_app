@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Controller, Scene } from 'react-scrollmagic';
 import LookImage from '../LookImage';
+import LookVideo from '../LookVideo';
 import Image from '../Image';
+import Video from '../Video';
 import image from '../../assets/images.json';
 import './styles.scss';
 
 const Main = props => {
-  const { visibilityClass, hideLeft } = props;
+  const { visibilityClass } = props;
   const { images } = image;
   const { logo, sublogo, looks, data } = images;
 
@@ -42,11 +44,8 @@ const Main = props => {
               name={data.name}
               orientation="horizontal"
             />
-            <div className="look-two__video-wrapper">
-              <video className="look-two__video" loop autoPlay>
-                <source src={looks.look_two.video} type="video/mp4" />
-                <track default kind="captions" />
-              </video>
+            <div className="section-two__wrapper">
+              <Video number="one" url={looks.look_two.video} />
               <Image
                 number="one"
                 url={looks.look_two.asset}
@@ -104,17 +103,13 @@ const Main = props => {
         {/* ***Cambiar a Look */}
       </section>
       <section className="section-six__container">
-        <div className="look-six__wrapper">
-          <video className="look-six__video" loop autoPlay>
-            <source src={looks.look_six.url} type="video/mp4" />
-            <track default kind="captions" />
-          </video>
-          <p className="look__description">
-            {`${looks.look_six.name}. `}
-            <strong>{`${data.serie}. `}</strong>
-            {`${data.name}.`}
-          </p>
-        </div>
+        <LookVideo
+          number="six"
+          look={looks.look_six.name}
+          url={looks.look_six.url}
+          serie={data.serie}
+          name={data.name}
+        />
         <Image
           number="five"
           url={looks.look_six.asset}
@@ -156,10 +151,7 @@ const Main = props => {
           orientation="vertical"
         />
         <div className="look-nine__video-wrapper">
-          <video className="look-nine__video" loop autoPlay>
-            <source src={looks.look_nine.video} type="video/mp4" />
-            <track default kind="captions" />
-          </video>
+          <Video number="two" url={looks.look_nine.video} />
         </div>
       </section>
       <section className="section-ten__container">
@@ -201,7 +193,6 @@ const Main = props => {
 
 Main.propTypes = {
   visibilityClass: PropTypes.string.isRequired,
-  hideLeft: PropTypes.string.isRequired,
 };
 
 export default Main;

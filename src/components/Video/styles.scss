@@ -1,0 +1,12 @@
+@import '../../stylesheets/mixins.scss';
+
+.video {
+  &__one {
+    @include boxSize(290px, 395px);
+  }
+
+  &__two {
+    width: 393px;
+    order: 1;
+  }
+}
