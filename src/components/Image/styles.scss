@@ -1,0 +1,56 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.video {
+  &__video-two {
+    @include boxSize(290px, 395px);
+
+    &-wrapper {
+      @include flexContainer(flex, center, flex-start, column);
+    }
+  }
+
+  // &-six {
+  //   &__video {
+  //     width: 770px;
+  // }
+
+  //   &__video {
+  //     width: 393px;
+  //     order: 1;
+  //   }
+}
+
+.image {
+  &__one {
+    width: 190px;
+    margin: 40px 0;
+  }
+
+  &__two {
+    width: 454px;
+  }
+
+  &__three {
+    width: 189px;
+  }
+
+  &__four {
+    width: 454px;
+  }
+
+  &__five {
+    width: 190px;
+    margin-top: 60px;
+  }
+
+  &__six {
+    width: 455px;
+    order: 1;
+  }
+
+  &__seven {
+    width: 193px;
+    order: 1;
+  }
+}

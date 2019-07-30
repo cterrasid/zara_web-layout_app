@@ -1,0 +1,129 @@
+@import '../../stylesheets/mixins.scss';
+@import '../../stylesheets/variables.scss';
+
+.look {
+  &__description,
+  &__description strong {
+    font-size: $font-size-XS;
+    text-transform: capitalize;
+    text-align: end;
+  }
+
+  &-one {
+    &__wrapper {
+      margin: 10% 5% 0 0;
+      width: 100%;
+      @include flexContainer(flex, center, flex-end, column);
+    }
+
+    &__image {
+      @include boxSize(580px, 507px);
+    }
+  }
+
+  &-two {
+    &__wrapper {
+      @include flexContainer(flex, center, flex-end, column);
+      z-index: 2;
+    }
+
+    &__image {
+      width: 450px;
+    }
+  }
+
+  &-three {
+    &__image {
+      width: 540px;
+    }
+  }
+
+  &-four {
+    &__wrapper {
+      @include flexContainer(flex, center, flex-start, row);
+    }
+    &__image {
+      width: 1059px;
+    }
+  }
+
+  &-five {
+    &__image {
+      width: 322px;
+      align-self: flex-start;
+    }
+  }
+
+  &-six {
+    &__video {
+      width: 770px;
+    }
+
+    &__image {
+      width: 190px;
+      margin-top: 60px;
+    }
+  }
+
+  &-seven {
+    &__wrapper {
+      order: 2;
+    }
+
+    &__image {
+      width: 321px;
+    }
+  }
+
+  &-eight {
+    &__wrapper {
+      @include flexContainer(flex, center, flex-start, row);
+    }
+
+    &__image {
+      width: 1055px;
+    }
+  }
+
+  &-nine {
+    &__wrapper {
+      @include flexContainer(flex, center, flex-start, row);
+      order: 2;
+    }
+
+    &__image {
+      height: 571px;
+    }
+
+    &__video {
+      width: 393px;
+      order: 1;
+    }
+  }
+
+  &-ten {
+    &__wrapper {
+      @include flexContainer(flex, center, flex-start, row);
+    }
+
+    &__image {
+      width: 1055px;
+    }
+  }
+
+  &-eleven {
+    &__wrapper {
+      order: 2;
+    }
+
+    &__image {
+      width: 454px;
+    }
+  }
+}
+
+#vertical {
+  text-orientation: sideways;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}

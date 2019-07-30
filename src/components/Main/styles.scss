@@ -35,7 +35,7 @@
       @include flexContainer(flex, space-evenly, center, row);
       background-color: $white-pure;
       width: 100%;
-      margin: 160px 0;
+      padding: 160px 0;
       z-index: 2;
     }
   }
@@ -53,7 +53,7 @@
       @include flexContainer(flex, space-evenly, center, row);
       background-color: $white-pure;
       width: 100%;
-      margin: 160px 0;
+      padding: 160px 0;
       z-index: 2;
     }
   }
@@ -72,7 +72,7 @@
       @include flexContainer(flex, space-evenly, center, row);
       background-color: $white-pure;
       width: 100%;
-      margin: 160px 0;
+      padding: 160px 0;
       z-index: 2;
     }
   }
@@ -81,6 +81,7 @@
     &__container {
       background-color: $white-pure;
       z-index: 2;
+      width: 100%;
     }
   }
 
@@ -89,7 +90,7 @@
       @include flexContainer(flex, space-evenly, flex-end, row);
       background-color: $white-pure;
       width: 100%;
-      margin: 160px 0;
+      padding: 160px 0;
       z-index: 2;
     }
   }
@@ -98,6 +99,7 @@
     &__container {
       background-color: $white-pure;
       z-index: 2;
+      width: 100%;
     }
   }
 
@@ -106,183 +108,8 @@
       @include flexContainer(flex, space-evenly, center, row);
       background-color: $white-pure;
       width: 100%;
-      margin: 160px 0;
+      padding: 160px 0;
       z-index: 2;
-    }
-  }
-}
-
-.look {
-  &__description,
-  &__description strong {
-    font-size: $font-size-XS;
-    text-transform: capitalize;
-    text-align: end;
-  }
-
-  &-one {
-    &__wrapper {
-      margin: 10% 5% 0 0;
-      width: 100%;
-      @include flexContainer(flex, center, flex-end, column);
-    }
-
-    &__image {
-      @include boxSize(580px, 507px);
-    }
-  }
-
-  &-two {
-    &__wrapper {
-      @include flexContainer(flex, center, flex-end, column);
-      z-index: 2;
-    }
-
-    &__image {
-      &-one {
-        width: 450px;
-      }
-
-      &-two {
-        width: 190px;
-        margin: 40px 0;
-      }
-    }
-
-    &__video {
-      @include boxSize(290px, 395px);
-
-      &-wrapper {
-        @include flexContainer(flex, center, flex-start, column);
-      }
-    }
-  }
-
-  &-three {
-    &__image {
-      &-one {
-        width: 540px;
-      }
-      &-two {
-        width: 454px;
-      }
-    }
-  }
-
-  &-four {
-    &__wrapper {
-      @include flexContainer(flex, center, flex-start, row);
-    }
-    &__image {
-      &-one {
-        width: 1059px;
-      }
-    }
-  }
-
-  &-five {
-    &__image {
-      &-one {
-        width: 322px;
-        align-self: flex-start;
-      }
-
-      &-two {
-        width: 189px;
-      }
-
-      &-three {
-        width: 454px;
-      }
-    }
-  }
-
-  &-six {
-    &__video {
-      width: 770px;
-    }
-
-    &__image {
-      &-one {
-        width: 190px;
-        margin-top: 60px;
-      }
-    }
-  }
-
-  &-seven {
-    &__wrapper {
-      order: 2;
-    }
-
-    &__image {
-      &-one {
-        width: 321px;
-      }
-
-      &-two {
-        width: 455px;
-        order: 1;
-      }
-    }
-  }
-
-  &-eight {
-    &__wrapper {
-      @include flexContainer(flex, center, flex-start, row);
-    }
-
-    &__image {
-      &-one {
-        width: 1055px;
-      }
-    }
-  }
-
-  &-nine {
-    &__wrapper {
-      @include flexContainer(flex, center, flex-start, row);
-      order: 2;
-    }
-
-    &__image {
-      &-one {
-        height: 571px;
-      }
-    }
-
-    &__video {
-      width: 393px;
-      order: 1;
-    }
-  }
-
-  &-ten {
-    &__wrapper {
-      @include flexContainer(flex, center, flex-start, row);
-    }
-
-    &__image {
-      &-one {
-        width: 1055px;
-      }
-    }
-  }
-
-  &-eleven {
-    &__wrapper {
-      order: 2;
-    }
-
-    &__image {
-      &-one {
-        width: 454px;
-      }
-
-      &-two {
-        width: 193px;
-        order: 1;
-      }
     }
   }
 }
@@ -351,12 +178,6 @@
 #sticky {
   position: sticky;
   top: 100px;
-}
-
-#vertical {
-  text-orientation: sideways;
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
 }
 
 #vertical-logo {
