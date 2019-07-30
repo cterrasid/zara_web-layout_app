@@ -24,7 +24,7 @@ _These instructions will allow you to obtain a copy of the project on your local
 - [react 16.8.6](https://www.npmjs.com/package/react)
 - [react-dom 16.8.6](https://www.npmjs.com/package/react-dom)
 - [react-scripts 3.0.1](https://www.npmjs.com/package/react-scripts)
-- [momentjs 2.2.0](https://www.npmjs.com/package/react-moment)
+
 
 ### Development dependencies
 
