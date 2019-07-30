@@ -1,23 +1,6 @@
 @import '../../stylesheets/mixins.scss';
 @import '../../stylesheets/variables.scss';
 
-.video {
-  &__video-two {
-    @include boxSize(290px, 395px);
-
-    &-wrapper {
-      @include flexContainer(flex, center, flex-start, column);
-    }
-  }
-
-
-
-  //   &__video {
-  //     width: 393px;
-  //     order: 1;
-  //   }
-}
-
 .image {
   &__one {
     width: 190px;
